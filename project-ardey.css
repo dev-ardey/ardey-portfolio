@@ -266,7 +266,7 @@ body {
   margin-right: auto;
   border-radius: 30px;
   animation: navbar-animation-rev 0.35s ease forwards;
-  z-index: 1;
+  z-index: 4;
   display: block;
   align-items: center;
   justify-content: center;
@@ -515,6 +515,7 @@ h1 {
   border-radius: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
+  height: 1100px;
   /* padding-left: 20px; */
   /* padding-right: 20px; */
   display: block;
@@ -545,11 +546,57 @@ h1 {
 .button-cover {
   height: 100px;
   width: 300px;
-  background-color: #fff;
+  background-color: rgba(134, 134, 134, 0.2); 
   border-radius: 50px;
   /* margin-left: 200px; */
   display: flex;
   align-items: center;
+  margin-top: 150px;
+}
+
+.button-text {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 50px;
+  z-index: 2;
+
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  width: 5em;
+  line-height: 0.9em;
+  
+  
+    
+    background: conic-gradient(
+  
+      #fc3456 24.333%, 
+      /* #fc3456 = rgb(252,52,86) */
+      #4530fd 31.666%,  
+      /* #4530fd = rgb(69,48,253) */
+      #470f7f 50%, 
+      #35017e 58.333%, 
+      #210959 66.666%, 
+      #4624d7 74.333%, 
+      #fc3456 81.6666%);
+
+    background-size: 150%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+
+.skill-img {
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
+  margin-bottom: -130px;
 }
 
 #button .knobs:before,
@@ -602,7 +649,7 @@ h1 {
 
 #button .checkbox:checked + .knobs span {
   left: 210px;
-  background-color: #fc3456;
+  background-color: #ffc426;
 }
 
 #button .checkbox:checked ~ .layer {
