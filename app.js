@@ -1,4 +1,6 @@
 
+
+// hide and unhide projects 
 // observer
 // function that runs every time te visibility of observed elements changes
 const observer = new IntersectionObserver((entries) => {
