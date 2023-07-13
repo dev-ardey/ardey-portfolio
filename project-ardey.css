@@ -511,7 +511,7 @@ h1 {
 
 #skill-orbit {
   /* height: 80vh; */
-  background-color: rgb(69,48,253, 0.1); 
+  background-color: rgba(134, 134, 134, 0.1); 
   border-radius: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -524,91 +524,105 @@ h1 {
   /* width:fit-content; */
   /* WITH POSITION ABSOLUTE I CAN SEE THE ANIMATION PROBLEM */
   /* position: absolute; */
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 2;
   /* margin-left: auto; */
-  margin-right: auto;
+  /* margin-right: auto; */
+  scroll-behavior: none;
 }
 
 
 
 
 /* skill button */
-#button-9 .knobs:before,
-#button-9 .knobs:after,
-#button-9 .knobs span {
+
+.skill-button-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-cover {
+  height: 100px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 50px;
+  /* margin-left: 200px; */
+  display: flex;
+  align-items: center;
+}
+
+#button .knobs:before,
+#button .knobs:after,
+#button .knobs span {
   position: absolute;
-  top: 4px;
-  width: 20px;
-  height: 10px;
-  font-size: 10px;
+  top: 15px;
+  width: 70px;
+  height: 70px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
-  padding: 9px 4px;
-  border-radius: 50%;
+  /* padding: 9px 4px; */
+  border-radius: 200px;
   transition: 0.4s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
-#button-9 .knobs:before {
-  content: "YES";
-  left: 4px;
+#button .knobs:before {
+  /* content: "◯"; */
+  left: 10px;
+  top: 20px;
 }
 
-#button-9 .knobs:after {
-  content: "NO";
-  right: -24px;
+#button .knobs:after {
+  /* content: "▢"; */
+  left: 210px;
+  top: 22px;
 }
 
-#button-9 .knobs:before,
-#button-9 .knobs:after {
+#button .knobs:before,
+#button .knobs:after {
   color: #fff;
   z-index: 2;
 }
 
-#button-9 .knobs span {
-  left: 4px;
-  background-color: #03a9f4;
+#button .knobs span {
+  left: 20px;
+  background-color: #4624d7;
   z-index: 1;
 }
 
-#button-9 .checkbox:checked + .knobs:before {
+#button .checkbox:checked + .knobs:before {
   left: -24px;
 }
 
-#button-9 .checkbox:checked + .knobs:after {
+#button .checkbox:checked + .knobs:after {
   right: 4px;
 }
 
-#button-9 .checkbox:checked + .knobs span {
-  left: 42px;
-  background-color: #f44336;
+#button .checkbox:checked + .knobs span {
+  left: 210px;
+  background-color: #fc3456;
 }
 
-#button-9 .checkbox:checked ~ .layer {
+#button .checkbox:checked ~ .layer {
   background-color: #fcebeb;
 }
 
 
 
-.button-cover {
-  height: 40px;
-  width: 74px;
-  background-color: #fff;
-  border-radius: 50px;
-  margin-left: 200px;
-  display: flex;
-  align-items: center;
-}
+
 
 
 .button {
   position: relative;
   /* top: 50%; */
-  width: 74px;
-  height: 36px;
-  margin: auto 0 auto;
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  /* margin: auto 0 auto; */
   overflow: hidden;
+  /* background-color: #0f97d6; */
 }
 
 
@@ -1558,11 +1572,11 @@ h1 {
 #ardey-orbital-img {
   position: relative;
   width: 350px;
-  height: 380px;
+  height: 360px;
   display: flex;
   align-self: center;
   margin-top: 320px;
-  border-radius: 40%;
+  border-radius: 50%;
 } 
 
 
