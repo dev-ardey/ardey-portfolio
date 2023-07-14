@@ -516,6 +516,8 @@ h1 {
   padding-top: 50px;
   padding-bottom: 50px;
   height: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* padding-left: 20px; */
   /* padding-right: 20px; */
   display: block;
@@ -691,7 +693,46 @@ h1 {
 
 
 
+/* skill list */
+#skill-list {
+  /* background-color: rgba(168, 13, 13, 0.8);  */
+  background-color: rgb(241, 241, 241); 
+  border-radius: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 1100px;
+  width: 1050px;
+  position: absolute;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 
+  overflow-x: hidden;
+  z-index: 3;
+
+  scroll-behavior: none;
+}
+
+#container {
+  display:flex;
+  justify-content: center;
+  overflow:visible;
+}
+
+#skills-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+#skill-list-img {
+  width: 800px;
+  height: 800px;
+  margin-top: 150px;
+}
+/* skill - list transform */
 
 
 
