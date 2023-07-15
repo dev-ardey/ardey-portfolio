@@ -21,6 +21,7 @@ body {
   :root {
     --theme-color1: rgba(35,35,32,255);
     --theme-color2: rgba(254,250,245,255);
+    --background2: rgba(243,239,234,255);
   }
 
   #hero-section {
@@ -513,7 +514,7 @@ h1 {
   /* height: 80vh; */
   background-color: rgba(134, 134, 134, 0.1); 
   border-radius: 60px;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
   height: 1100px;
   padding-left: 30px;
@@ -696,7 +697,7 @@ h1 {
 /* skill list */
 #skill-list {
   /* background-color: rgba(168, 13, 13, 0.8);  */
-  background-color: rgb(241, 241, 241); 
+  background-color: var(--background2);
   border-radius: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -744,18 +745,18 @@ h1 {
 
   /* test */
 #projects {
-  padding: 0;
+  padding-top: 100px;
   margin: 0;
   min-height: 80vh;
-  background-color: #0f55ce5a;
+  /* background-color: #0f55ce5a; */
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
+  justify-content: baseline;
+  align-items: center;
   flex-direction: column;
   z-index: 1;
 }
 
-
+/* temporary removed h2 , check if it matters for SEO
 #h2-projects {
   position: relative;
   font-family: "Work Sans", sans-serif;
@@ -771,9 +772,7 @@ h1 {
       #ffefb1 8.333%, 
       #ffc426 16.666%, 
       #fc3456 24.333%, 
-      /* #fc3456 = rgb(252,52,86) */
       #4530fd 31.666%,  
-      /* #4530fd = rgb(69,48,253) */
       #470f7f 50%, 
       #35017e 58.333%, 
       #210959 66.666%, 
@@ -785,7 +784,8 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 
-}
+} */
+
 
 /* project windows */
 #animation-projects-div{
@@ -876,88 +876,221 @@ h1 {
 
 }
 
- /* /test  */
 
 
 
 
 
+/* projects */
+#projects {
+  margin-top: 200px;
+}
+
+#project-airshield {
+  /* height: 80vh; */
+  background-color: var(--background2);
+  border-radius: 60px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  height: 115rem;
+  width: 80%;
+  margin-top: 200px;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-self: center; */
+  /* overflow-x: hidden; */
+  /* scroll-behavior: none; */
+}
+
+#airshield-img {
+  height: 900px;
+  border-radius: 60px;
+  margin-top: 120px;
+}
 
 
-
-/* beneden is test zone voor background blob animation, altijd in background */
-/* SLEEEP  FLOW NAAR ACHTER TEXT ETC. zodat je kunt blijven klicken */
-/* flowing background animation */
-
-/* flowing-background with z-index to keep it in the background */
-
-
-
-
-/*  FLOWING BACKGROUND is niet responsive anders proberen
-
-#flowing-background {
+.text-small {
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  background: linear-gradient(rgb(69,48,253, 0.3), rgb(252,52,86, 0.3));
-  border-radius: 50%;
-  animation: flowing-background-animation-rev 10s linear;
-  animation-iteration-count: infinite;
-  z-index: -1;
-}
+  margin-top: 280px;
+  z-index: 2;
 
-@keyframes flowing-background-animation-rev {
-0% {
-  left: 0%;
-  top: 0%;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, linear;
-  width: 100%;
-  height: 100%;
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3.6em;
+  width: fit-content;
+  line-height: 0.9em;
   
   
-}
-30% {
-  visibility: visible;
-  opacity: 0;
-
-}
-50% {
-  visibility: visible;
-  opacity: 1;
-
-}
-70% {
-  visibility: visible;
-  opacity: 0;
-}
+    
 
 
-100% {
-  left: 0%;
-  top: -40%;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, linear;
-  width: 100%;
-  height: 100%;
+}
+
+.text-head {
+  margin-top: 250px;
+  z-index: 2;
+
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3.6em;
+  width: fit-content;
+  line-height: 0.9em;
   
+  
+    
+    background: conic-gradient(
+  
+      #fc3456 24.333%, 
+      /* #fc3456 = rgb(252,52,86) */
+      #4530fd 31.666%,  
+      /* #4530fd = rgb(69,48,253) */
+      #470f7f 50%, 
+      #35017e 58.333%, 
+      #210959 66.666%, 
+      #4624d7 74.333%, 
+      #fc3456 81.6666%);
+
+    background-size: 150%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
 }
-} */
 
-/* bol kleineer maken , meerdere obllen toevoegen */
+.text-color {
+    background: conic-gradient(
+  
+      #fc3456 24.333%, 
+      /* #fc3456 = rgb(252,52,86) */
+      #4530fd 31.666%,  
+      /* #4530fd = rgb(69,48,253) */
+      #470f7f 50%, 
+      #35017e 58.333%, 
+      #210959 66.666%, 
+      #4624d7 74.333%, 
+      #fc3456 81.6666%);
 
-/* portfolio orbit */
-/* make my projecs and skills float around my character */
-/* tijdens orbit, achtergrond animation stoppen */
+    /* background-size: 150%; */
+    /* background-repeat: repeat; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
+.text-smallest {
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  /* margin-top: 250px; */
+  z-index: 2;
+
+
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  width: fit-content;
+  line-height: 0.9em;
+
+}
+
+.text-mini {
+  font-size: 0.6em;
+}
+
+
+#project-text {
+  font-size: 3rem;
+  padding: 80px;
+}
+
+
+
+
+#other-projects{
+    /* height: 80vh; */
+    background-color: var(--background2);
+    border-radius: 60px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    height: 50rem;
+    width: 80%;
+    margin-top: 500px;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* overflow-x: hidden; */
+    /* scroll-behavior: none; */
+}
+
+#other-projects-text{
+  margin-top: -300px;
+}
+
+#portfolio-grid{
+  height: 50rem;
+  border-radius: 50px;
+}
+
+#project-img-style{
+  position: absolute;
+  height: 50rem;
+  width: 80%;
+  border-radius: 50px;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--background2));
+  /* background: linear-gradient(180deg, rgba(250, 0, 0, 0.8), var(--background2)); */
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ............................................................................................ */
 /* orbit */
 
 #outer-orbit {
@@ -1184,14 +1317,6 @@ h1 {
 
 
 /* bij hover over het midden, een lijst met skills en text die erbij hoort. */
-
-
-
-
-
-
-
-
 
 
 
