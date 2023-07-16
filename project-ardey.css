@@ -735,9 +735,20 @@ h1 {
 }
 /* skill - list transform */
 
+#list-div {
+  background-color: #d2d2d2;
+  border-radius: 60px;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
 
-
-
+#list-subdiv{
+  background-color: #0f0fce;
+}
 
 
 
