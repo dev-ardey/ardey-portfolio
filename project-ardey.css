@@ -736,18 +736,45 @@ h1 {
 /* skill - list transform */
 
 #list-div {
-  background-color: #d2d2d2;
-  border-radius: 60px;
-  height: 800px;
-  width: 800px;
+  /* background-color: #d2d2d2; */
+  /* border-radius: 60px; */
+  height: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
 }
 
-#list-subdiv{
+.list-item {
+  width: 26rem;
+  background-color: var(--theme-color2);
+  border-radius: 50px;
+  /* padding-left: 3rem; */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+
+  /* one ore the other / center or padding left+right */
+  /* justify-content: center; */
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+/* #list-subdiv{
   background-color: #0f0fce;
+} */
+.list-icon {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
 }
 
 
@@ -1806,20 +1833,176 @@ h1 {
 
 
 
+/* list items */
+
+#html-2 {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 123, 0); 
+  background-color: rgb(241, 241, 241);
+}
 
 
+#javascript-2 {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 191, 0); 
+  background-color: var(--background2);
+}
+
+#css-2 {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(0, 17, 255); 
+  background-color: var(--background2);
+}
+
+#react {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(0, 234, 255); 
+  background-color: var(--background2);
+}
 
 
+#angular {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 0, 30); 
+  background-color: var(--background2);
+}
 
+#node {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(11, 165, 0); 
+  background-color: var(--background2);
+}
 
+#vite {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 191, 0); 
+  background-color: var(--background2);
+}
 
+#agile {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(127, 127, 127); 
+  background-color: var(--background2);
+}
 
+#git {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(251, 55, 55); 
+  background-color: var(--background2);
+}
 
-/* Javascript portfolio */
+#atlassian {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(55, 150, 251); 
+  background-color: var(--background2);
+}
 
+#jira {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(55, 84, 251); 
+  background-color: var(--background2);
+}
 
+#trello {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(71, 55, 251); 
+  background-color: var(--background2);
+}
 
+#web-sec {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(0, 190, 35); 
+  background-color: var(--background2);
+}
 
+#figma-2 {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(136, 0, 190); 
+  background-color: var(--background2);
+}
 
+#uxui {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 191, 0); 
+  background-color: var(--background2);
+}
 
+#server {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(0, 217, 116); 
+  background-color: var(--background2);
+}
 
+#deployment {
+  width: 50px; 
+  display: inline-block; 
+  text-align: center;
+  vertical-align: bottom; 
+  line-height: 50px;
+  color: rgb(255, 0, 89); 
+  background-color: var(--background2);
+}
