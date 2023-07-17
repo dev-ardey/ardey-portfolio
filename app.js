@@ -30,25 +30,23 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // skill - list transform functions 
 
-// temporary commented while developing
+document.addEventListener('DOMContentLoaded', function () {
+    var skillList = document.getElementById('skill-list');
+    skillList.style.display = 'none';
+});
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var skillList = document.getElementById('skill-list');
-//     skillList.style.display = 'none';
-// });
+document.getElementById('checkbox').onclick = function () {
+    toggleSkillList();
+};
 
-// document.getElementById('checkbox').onclick = function () {
-//     toggleSkillList();
-// };
+function toggleSkillList() {
+    var checkbox = document.getElementById('checkbox');
+    var skillList = document.getElementById('skill-list');
 
-// function toggleSkillList() {
-//     var checkbox = document.getElementById('checkbox');
-//     var skillList = document.getElementById('skill-list');
-
-//     if (checkbox.checked) {
-//         skillList.style.display = 'block';
-//     } else {
-//         skillList.style.display = 'none';
-//     }
-// }
+    if (checkbox.checked) {
+        skillList.style.display = 'block';
+    } else {
+        skillList.style.display = 'none';
+    }
+}
 
