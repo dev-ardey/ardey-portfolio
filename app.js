@@ -30,23 +30,34 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // skill - list transform functions 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     var skillList = document.getElementById('skill-list');
-    skillList.style.display = 'none';
-});
-
-document.getElementById('checkbox').onclick = function () {
+    var skillListVisible = localStorage.getItem('skillListVisible');
+  
+    if (skillListVisible === 'true') {
+      skillList.style.display = 'block';
+      document.getElementById('checkbox').checked = true;
+    } else {
+      skillList.style.display = 'none';
+      document.getElementById('checkbox').checked = false;
+    }
+  });
+  
+  document.getElementById('checkbox').onclick = function() {
     toggleSkillList();
-};
-
-function toggleSkillList() {
+  };
+  
+  function toggleSkillList() {
     var checkbox = document.getElementById('checkbox');
     var skillList = document.getElementById('skill-list');
-
+  
     if (checkbox.checked) {
-        skillList.style.display = 'block';
+      skillList.style.display = 'block';
+      localStorage.setItem('skillListVisible', 'true');
     } else {
-        skillList.style.display = 'none';
+      skillList.style.display = 'none';
+      localStorage.setItem('skillListVisible', 'false');
     }
-}
+  }
+  
 
