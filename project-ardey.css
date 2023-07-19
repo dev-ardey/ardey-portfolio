@@ -1071,28 +1071,22 @@ h1 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  margin-top: 280px;
+  margin-top: 270px;
   z-index: 2;
   padding: 0.5rem;
-
+  text-align: center;
 
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 3.6em;
   width: fit-content;
   line-height: 0.9em;
-  
-  
-    
-
-
 }
 
 .text-head {
   margin-top: 250px;
   z-index: 2;
-
-
+  
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 3.6em;
@@ -1121,6 +1115,7 @@ h1 {
     -webkit-text-fill-color: transparent; 
 
 }
+
 
 .text-color {
     background: conic-gradient(
@@ -1168,7 +1163,12 @@ h1 {
   line-height: 3rem;
 }
 
-
+.airshield-box  {
+  display: flex;
+  justify-content: center;
+  margin-top: -16rem;
+  margin-bottom: -3rem;
+}
 
 
 #other-projects{
