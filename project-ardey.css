@@ -1237,6 +1237,13 @@ h1 {
   margin-bottom: -7rem;
 }
 
+#notey-style {
+  /* font-weight: 400; */
+  /* font-size: 3.3rem; */
+  padding: 1.3rem;
+  margin-bottom: -1.3rem;
+}
+
 
 
 .projects-link-container {
@@ -1292,6 +1299,9 @@ h1 {
   font-size: 3.3rem;
   padding: 0.3rem;
 }
+
+
+
 
 
 
