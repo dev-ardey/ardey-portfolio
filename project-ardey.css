@@ -1178,11 +1178,11 @@ h1 {
     /* height: 80vh; */
     background-color: var(--background2);
     border-radius: 60px;
-    padding-top: 80px;
+    padding-top: 0px;
     padding-bottom: 50px;
     height: 115rem;
     width: 90%;
-    margin-top: 500px;
+    margin-top: 50px;
     /* padding-left: 30px; */
     /* padding-right: 30px; */
     display: flex;
@@ -1194,6 +1194,12 @@ h1 {
     /* scroll-behavior: none; */
 }
 
+#other-projects-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #other-project-text {
   font-size: 3rem;
   padding: 80px;
@@ -1202,7 +1208,11 @@ h1 {
 
 
 #other-projects-text{
-  margin-top: -300px;
+  /* margin-top: -300px; */
+}
+
+#other-projects-text-title{
+  margin-top: 250px;
 }
 
 #portfolio-grid{
@@ -2306,3 +2316,53 @@ h1 {
   color: rgb(0, 200, 255); 
   background-color: var(--background2);
 }
+
+
+
+/* project slides navitation ...................................................................................................... */
+/* Container for the slide */
+
+.project-slide-container {
+ padding-top: 400px;
+}
+.scroll-container {
+  overflow: hidden;
+}
+
+/* Flex container to hold all slides */
+.slides {
+  display: flex;
+  width: 400%; /* Total width of all slides (4 slides) */
+  transition: transform 0.3s ease; /* Smooth slide transition */
+}
+
+/* Style for each slide */
+.slide {
+  flex: 0 0 25%; /* 25% width to fit 4 slides within the .slides container */
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation dots */
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+  word-spacing: 4.5rem;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: #555;
+  width: 70px;
+  height: 70px;
+}
+
