@@ -1212,7 +1212,7 @@ h1 {
 }
 
 #other-projects-text-title{
-  margin-top: 250px;
+  margin-top: 600px;
 }
 
 #portfolio-grid{
@@ -1222,10 +1222,10 @@ h1 {
 
 #notey{
 
-    height: 800px;
+    height: 850px;
     /* border-radius is 80px insteead of 60px so that is border-radius the img */
     border-radius: 80px;
-    margin-top: 50px;
+    margin-top: 160px;
     background-color: var(--theme-color2);
     padding: 30px;
 }
@@ -1243,7 +1243,7 @@ h1 {
 .notey-box  {
   display: flex;
   justify-content: center;
-  margin-top: -16rem;
+  margin-top: -18rem;
   margin-bottom: -7rem;
 }
 
@@ -2354,15 +2354,16 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: var(--background2);
   display: inline-block;
-  margin: 0 5px;
+  /* margin: 0 5px; */
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .active-dot {
-  background-color: #555;
-  width: 70px;
-  height: 70px;
+  background-color: var(--theme-color1);
+  /* width: 70px;
+  height: 70px; */
 }
 
