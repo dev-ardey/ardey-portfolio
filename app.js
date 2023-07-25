@@ -87,3 +87,96 @@ function updateActiveDot() {
     dot.classList.toggle("active-dot", index === slideIndex);
   });
 }
+
+
+
+// darkmode 
+
+
+
+const darkModeElement = document.getElementById("darkmode");
+const body = document.body;
+const navbar = document.getElementById("navbar");
+
+// Function to toggle dark mode state and update styles
+function toggleDarkMode() {
+  if (darkModeElement.classList.contains("darkmode-active")) {
+    darkModeElement.classList.remove("darkmode-active");
+    darkModeElement.classList.add("darkmode-reversed");
+    // Remove the animation class
+    darkModeElement.style.animation = "none";
+    // Reset the animation after a short delay (0ms) to retrigger it
+    setTimeout(() => {
+      darkModeElement.style.animation = "";
+    }, 0);
+    // Store the dark mode state in localStorage as "false" when reversed (not active)
+    localStorage.setItem("darkModeState", "false");
+  } else {
+    darkModeElement.classList.add("darkmode-active");
+    darkModeElement.classList.remove("darkmode-reversed");
+    // Remove the animation class
+    darkModeElement.style.animation = "none";
+    // Reset the animation after a short delay (0ms) to retrigger it
+    setTimeout(() => {
+      darkModeElement.style.animation = "";
+    }, 0);
+    // Store the dark mode state in localStorage as "true" when active
+    localStorage.setItem("darkModeState", "true");
+  }
+
+  // Call the function to update styles
+  updateDarkModeStyles();
+}
+
+//darkmode root color
+
+// Set the value of --background2 to the computed value of --darkmode2
+// Function to handle styles based on dark mode state
+function updateDarkModeStyles() {
+  if (darkModeElement.classList.contains("darkmode-active")) {
+    // darkModeElement.style.backgroundColor = "var(--button-color)";
+    // navbar.style.backgroundColor = "var(--button-color)";
+    body.style.color = "rgba(254,250,245,255)";
+
+    //linked aan darkModeColor maar wil dat het alleen 
+    const darkModeColor = getComputedStyle(document.documentElement).getPropertyValue('--darkmode2');
+    document.documentElement.style.setProperty('--background2', darkModeColor);
+
+    const darkModeBackground = getComputedStyle(document.documentElement).getPropertyValue('--darkmode-background1');
+    document.documentElement.style.setProperty('--theme-color2', darkModeBackground);
+    console.log("darkmode on")
+
+
+  } else {
+    body.style.color = "black";
+    // darkModeElement.style.backgroundColor = "var(--button-color)";
+    // navbar.style.backgroundColor = "var(--button-color)";
+
+    const lightModeColor = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-1');
+    document.documentElement.style.setProperty('--background2', lightModeColor);
+
+    const lightModeBackground = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-2');
+    document.documentElement.style.setProperty('--theme-color2', lightModeBackground);
+
+    console.log("darkmode off")
+
+  }
+}
+
+// Check if dark mode state is stored in localStorage on page load
+const isDarkMode = localStorage.getItem("darkModeState");
+// Apply the appropriate class based on the stored state
+if (isDarkMode === "true") {
+  darkModeElement.classList.add("darkmode-active");
+} else {
+  darkModeElement.classList.remove("darkmode-active");
+}
+
+// Call the function to update styles on page load
+updateDarkModeStyles();
+
+darkModeElement.addEventListener("click", () => {
+  // Call the function to toggle dark mode and update styles
+  toggleDarkMode();
+});
+
