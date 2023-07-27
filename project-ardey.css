@@ -26,8 +26,10 @@ body {
     /* medium color */
     --background2: rgba(243,239,234,255);
 
+
+
     --darkmode1:   rgb(69,48,253, 0.3); 
-    
+
 
     /* dark */
     --darkmode2:   rgb(83, 83, 83);
@@ -38,8 +40,63 @@ body {
 
     /* button-for-blur */
     --button-color: rgb(200, 200, 200, 0.2);
+    
+
+
+    /* h1 background color original*/
+    --h1-background: conic-gradient(
+      #ffefb1 8.333%, 
+      #ffc426 16.666%, 
+      #fc3456 24.333%, 
+      #4530fd 31.666%,  
+      #470f7f 50%, 
+      #35017e 58.333%, 
+      #210959 66.666%, 
+      #4624d7 74.333%, 
+      #fc3456 81.6666%);
+
+          /* h1-darkmode background color */
+    --h1-darkmode: conic-gradient(
+      #7d34fc 8.333%, 
+      #8400ff 16.666%, 
+      #00ffbf 24.333%, 
+      #9a30fd 31.666%,  
+      #23abff 50%, 
+      #00ff4c 58.333%, 
+      #00eeff 66.666%, 
+      #00ffc8 74.333%, 
+      #7d34fc 81.6666%);
+
+    --button-text-light: conic-gradient(
+      #fc3456 24.333%, 
+      /* #fc3456 = rgb(252,52,86) */
+      #4530fd 31.666%,  
+      /* #4530fd = rgb(69,48,253) */
+      #470f7f 50%, 
+      #35017e 58.333%, 
+      #210959 66.666%, 
+      #4624d7 74.333%, 
+      #fc3456 81.6666%);
+
+      --button-text-dark: conic-gradient(
+      #5574ff 8.333%, 
+      #5574ff 16.666%, 
+      #5574ff 20.666%, 
+      #55c1ff 24.333%, 
+      #23f8ff 26.333%, 
+      /* #9a30fd 31.666%,   */
+      #23f8ff 50%, 
+      #00ffea 58.333%, 
+      #00eeff 66.666%, 
+      #00ffc8 74.333%, 
+      #5593ff 79.333%, 
+      #5574ff 81.6666%);
 
   }
+
+  
+  
+
 
   #hero-section {
     /* height: 100vh; check of ze dit bedoelen */
@@ -87,18 +144,7 @@ body {
   #h1-ardey {
     background: #fc3456;
     background-color: #fc3456;
-    background: conic-gradient(
-      #ffefb1 8.333%, 
-      #ffc426 16.666%, 
-      #fc3456 24.333%, 
-      /* #fc3456 = rgb(252,52,86) */
-      #4530fd 31.666%,  
-      /* #4530fd = rgb(69,48,253) */
-      #470f7f 50%, 
-      #35017e 58.333%, 
-      #210959 66.666%, 
-      #4624d7 74.333%, 
-      #fc3456 81.6666%);
+    background: var(--h1-background) ;
 
 
     background-size: 100%;
@@ -615,17 +661,7 @@ h1 {
   
   
     
-    background: conic-gradient(
-  
-      #fc3456 24.333%, 
-      /* #fc3456 = rgb(252,52,86) */
-      #4530fd 31.666%,  
-      /* #4530fd = rgb(69,48,253) */
-      #470f7f 50%, 
-      #35017e 58.333%, 
-      #210959 66.666%, 
-      #4624d7 74.333%, 
-      #fc3456 81.6666%);
+    background: var( --button-text-light);
 
     background-size: 150%;
     background-repeat: repeat;
@@ -887,35 +923,6 @@ h1 {
   z-index: 1;
 }
 
-/* temporary removed h2 , check if it matters for SEO
-#h2-projects {
-  position: relative;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 300;
-  font-size: 5em;
-  width: 5em;
-  line-height: 0.9em;
-  margin-left: calc(50vw - 1.9em);
-  
-  
-    
-    background: conic-gradient(
-      #ffefb1 8.333%, 
-      #ffc426 16.666%, 
-      #fc3456 24.333%, 
-      #4530fd 31.666%,  
-      #470f7f 50%, 
-      #35017e 58.333%, 
-      #210959 66.666%, 
-      #4624d7 74.333%, 
-      #fc3456 81.6666%);
-
-    background-size: 150%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-
-} */
 
 
 /* project windows */
@@ -1131,18 +1138,7 @@ h1 {
   
   
     
-    background: conic-gradient(
-  
-      #fc3456 24.333%, 
-      /* #fc3456 = rgb(252,52,86) */
-      #4530fd 31.666%,  
-      /* #4530fd = rgb(69,48,253) */
-      #470f7f 50%, 
-      #35017e 58.333%, 
-      #210959 66.666%, 
-      #4624d7 74.333%, 
-      #fc3456 81.6666%);
-
+    background: var(--button-text-light); 
     background-size: 150%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -1151,19 +1147,9 @@ h1 {
 }
 
 
-.text-color {
-    background: conic-gradient(
-  
-      #fc3456 24.333%, 
-      /* #fc3456 = rgb(252,52,86) */
-      #4530fd 31.666%,  
-      /* #4530fd = rgb(69,48,253) */
-      #470f7f 50%, 
-      #35017e 58.333%, 
-      #210959 66.666%, 
-      #4624d7 74.333%, 
-      #fc3456 81.6666%);
 
+.text-color {
+  background: var( --button-text-light);
     /* background-size: 150%; */
     /* background-repeat: repeat; */
     -webkit-background-clip: text;
@@ -1349,12 +1335,117 @@ h1 {
 
 
 
+/* project 30m amsterdam */
+
+#m30-text {
+  font-size: 3rem;
+  padding: 80px;
+  line-height: 3rem;
+}
+
+.m30-box  {
+  display: flex;
+  justify-content: center;
+  margin-top: -16rem;
+  margin-bottom: -3rem;
+}
 
 
+#m30-projects{
+    /* height: 80vh; */
+    background-color: var(--background2);
+    border-radius: 60px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    height: 116.5rem;
+    width: 90%;
+    margin-top: 50px;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* overflow-x: hidden; */
+    /* scroll-behavior: none; */
+}
+
+#m30-projects-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#m30-project-text {
+  font-size: 3rem;
+  padding: 80px;
+  line-height: 3rem;
+  display: flex;
+}
 
 
+#m30-projects-text{
+  /* margin-top: -300px; */
+}
+
+#m30-projects-text-title{
+  margin-top: 600px;
+}
+
+#m30-grid{
+  height: 50rem;
+  border-radius: 50px;
+}
+
+#m30{
+
+    width: 800px;
+    /* border-radius is 80px insteead of 60px so that is border-radius the img */
+    border-radius: 80px;
+    margin-top: 160px;
+    background-color: var(--theme-color2);
+    padding: 30px;
+}
+
+#m30-img-style{
+  position: absolute;
+  height: 50rem;
+  width: 80%;
+  border-radius: 50px;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--background2));
+  /* background: linear-gradient(180deg, rgba(250, 0, 0, 0.8), var(--background2)); */
+}
+
+.m30-box  {
+  display: flex;
+  justify-content: center;
+  margin-top: -18rem;
+  margin-bottom: -7rem;
+}
+
+#m30-style {
+  /* font-weight: 400; */
+  /* font-size: 3.3rem; */
+  padding: 1.3rem;
+  margin-bottom: -1.3rem;
+}
+
+/* hoeft waarsch niet, kan gewoon text worden */
+.m30-smallest {
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 
 
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4em;
+  width: fit-content;
+  line-height: 0.9em;
+  padding: 80px;
+}
 
 
 
