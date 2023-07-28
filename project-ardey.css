@@ -1343,12 +1343,7 @@ h1 {
   line-height: 3rem;
 }
 
-.m30-box  {
-  display: flex;
-  justify-content: center;
-  margin-top: -16rem;
-  margin-bottom: -3rem;
-}
+
 
 
 #m30-projects{
@@ -1423,6 +1418,11 @@ h1 {
   justify-content: center;
   margin-top: -18rem;
   margin-bottom: -7rem;
+}
+
+#m30-text-block {
+  /* background-color: #00eeff; */
+  width: 90%;
 }
 
 #m30-style {
