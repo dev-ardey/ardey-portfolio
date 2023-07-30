@@ -165,10 +165,10 @@ function updateDarkModeStyles() {
     const lightModeBackground = getComputedStyle(document.documentElement).getPropertyValue('--theme-color-2');
     document.documentElement.style.setProperty('--theme-color2', lightModeBackground);
 
-    const h1restore = getComputedStyle(document.documentElement).getPropertyValue('--h1-background');
+    const h1restore = getComputedStyle(document.documentElement).getPropertyValue('--h1-reset');
     document.documentElement.style.setProperty('--h1-background', h1restore);
 
-    const lightText = getComputedStyle(document.documentElement).getPropertyValue('--button-text-light');
+    const lightText = getComputedStyle(document.documentElement).getPropertyValue('--button-text-reset');
     document.documentElement.style.setProperty('--button-text-light', lightText);
 
 
