@@ -69,11 +69,18 @@ const slidesContainer = document.querySelector(".slides");
 
 let slideIndex = 0;
 
+// Get the last visited slide index from localStorage or set it to 0 if it's not found
+slideIndex = parseInt(localStorage.getItem("lastSlideIndex")) || 0;
+updateSlidePosition();
+updateActiveDot();
+
 dots.forEach((dot) => {
   dot.addEventListener("click", () => {
     slideIndex = parseInt(dot.getAttribute("data-slide"));
     updateSlidePosition();
     updateActiveDot();
+    // Save the current slide index in localStorage
+    localStorage.setItem("lastSlideIndex", slideIndex);
   });
 });
 
@@ -87,6 +94,8 @@ function updateActiveDot() {
     dot.classList.toggle("active-dot", index === slideIndex);
   });
 }
+
+
 
 
 
