@@ -2177,23 +2177,23 @@ h1 {
   background-color: rgb(244, 247, 255);
 }
 
-#goal-oriented {
+#git-orbit {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(49, 49, 49); 
+  color: rgb(255, 0, 43); 
   background-color: rgb(244, 247, 255);
 }
 
-#animation {
+#css {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(49, 49, 49); 
+  color: rgb(0, 89, 255); 
   background-color: rgb(244, 247, 255);
 }
 
@@ -2227,13 +2227,13 @@ h1 {
   background-color: rgb(244, 247, 255);
 }
 
-#deepThinking {
+#html {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(255, 155, 89);
+  color: rgb(255, 128, 89);
   background-color: rgb(244, 247, 255);
 }
 
@@ -2249,13 +2249,13 @@ h1 {
 
 /* D */
 
-#html {
+#angular-orbit {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(255, 123, 0); 
+  color: rgb(255, 0, 30); 
   background-color: rgb(241, 241, 241);
 }
 
@@ -2267,16 +2267,21 @@ h1 {
   vertical-align: bottom; 
   line-height: 50px;
   color: rgb(255, 230, 0); 
-  background-color: rgb(27, 27, 27);
+  color: rgb(248, 210, 0); 
+
+  /* background-color: rgb(27, 27, 27); */
+  background-color: rgb(241, 241, 241);
+
+  
 }
 
-#css {
+#react-orbit {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(0, 17, 255); 
+  color: rgb(0, 189, 206); 
   background-color: rgb(241, 241, 241);
 }
 
