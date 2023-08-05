@@ -14,21 +14,35 @@
         <div id="flowing-background"></div>
     </div>
     <header>
-        <nav id="navbar">
+        <nav id="navbar" onclick="toggleNavbar(event)">
             <div id="navbar-fingerprint">
                 <i class="fa-solid fa-fingerprint"></i>
             </div>
             <div id="navbar-icons">
-
+                <a class="nav-button-icon" href="#hero-section">
+                    <i class="fa-solid fa-house-chimney-user"></i>
+                </a>
+                <a class="nav-button-icon" href="#skill-button-div">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </a>
+                <a class="nav-button-icon" href="#projects">
+                    <i class="fa-solid fa-rocket"></i>
+                </a>
+                <a class="nav-button-icon" href="#mission">
+                    <i class="fa-solid fa-person-circle-question"></i>
+                </a>
             </div>
             <a href="#projects"></a>
             <a id="profile-link" target="_blank">
                 <!-- wich opens link to github or free codecamp -->
             </a>
         </nav>
-        <div id="darkmode">
+
+        <div id="darkmode" class="hidden-2">
             <i class="fa-solid fa-cloud-moon" id="darkmode-icon"></i>
         </div>
+
+
 
     </header>
     <main>
@@ -79,7 +93,7 @@
 
 
 
-        <div class="skill-button-div">
+        <div class="skill-button-div" id="skill-button-div">
             <div class="button-text">
                 <span><img class="skill-img" src="/orbit-black.png"></span>
                 <span>SKILLS</span>
@@ -272,13 +286,11 @@
             </div>
         </div>
 
-        </div>
-
 
         <!-- test scroll animation -->
 
         <div id="projects">
-            <div class="button-text"><span>PROJECTS</span> </div>
+            <div class="button-text"><span id="projects-title-text">PROJECTS</span> </div>
             <!-- <h2 id="h2-projects">Projects</h2> -->
             <!-- <div class="text-small"><span>The most important one</span> </div> -->
             <!-- <div class="text-small"><span>The one that matters most</span> </div> -->
@@ -421,7 +433,7 @@
                                     <!-- Just flip and see your growth, staying motivated to do <span class="text-color">better every day</span>.
                                     <br><br> -->
                                     <div class="projects-link-container">
-                                        <a class="projects-link" href="https://www.airshield.app/"><span
+                                        <a class="projects-link" href="https://notey.airshield.app/"><span
                                                 class="text-color projects-link-style">Discover Notey</span></a>
                                     </div>
 
@@ -444,15 +456,8 @@
                             <div id="aa-text" class="text-smallest">
                                 <span>
                                     <span class="notey-box"><span class="text-head"
-                                            id="notey-style">Academic<br>Anatomic</span></span><br><br>
-                                    <!-- is developed to address the
-                                    health risks faced by individuals living in air pollution-prone areas.
-                                    <br><br> -->
+                                            id="academic-style">Academic<br>Anatomic</span></span><br><br>
 
-                                    <!-- 
-                                        original
-                                        The app's <span class="text-color">mission</span> was inspired by the harmful emissions of a
-                                    local factory.  -->
 
 
                                     <br><br>
@@ -574,10 +579,9 @@
                                             project</span></span><br><br>
 
                                     <br><br>
-                                    The bigger the challenge,<br> greater the wisdom
-                                    learned.
+                                    The bigger the challenge,<br> the greater the accomplishment.
                                     <br><br>
-                                    Lets create something incredible <span class="text-color">together.
+                                    Let's create something incredible <span class="text-color">together.
                                         <br><br>
                                     </span>
                                     <!-- icon button -->
@@ -592,8 +596,9 @@
                                     <!-- Just flip and see your growth, staying motivated to do <span class="text-color">better every day</span>.
                                     <br><br> -->
                                     <div class="projects-link-container">
-                                        <a class="projects-link" href="https://www.airshield.app/"><span
-                                                class="text-color projects-link-style">Lets get in touch</span></a>
+                                        <a class="projects-link" href="mailto:mna.ankrah@gmail.com"><span
+                                                class="text-color projects-link-style">Let's create something
+                                                big</span></a>
                                     </div>
 
 
@@ -636,11 +641,7 @@
                         <br><br>
                         <div class="mission-link-container">
                             <a class="mission-link" href="mailto:mna.ankrah@gmail.com"><span
-                                    class="text-color mission-link-style">Lets get in touch</span></a>
-                        </div>
-                        <div class="mission-link-container">
-                            <a id="mission-email" class="mission-link" href="mailto:mna.ankrah@gmail.com"><span
-                                    class="text-color mission-link-style">mna.ankrah@gmail.com</span></a>
+                                    class="text-color mission-link-style">Let's get in touch</span></a>
                         </div>
 
                     </span>
@@ -649,12 +650,31 @@
             </div>
         </div>
 
-
-
-
     </main>
-    <footer>
+    <footer id="footer">
+        <div class="mission-link-container">
+            <a class="mission-link"><span class=" mission-link-style">Nii Ardey Ankrah</span></a>
+        </div>
+        <div class="mission-link-container">
+            <a class="mission-link"><span class=" mission-link-style">+31 6 48 18 41 88</span></a>
+        </div>
+        <div class="mission-link-container">
+            <a class="mission-link"><span class=" mission-link-style">mna.ankrah@gmail.com</span></a>
+        </div>
 
+        <div class="icon-button-container" id="mission-mail-box">
+            <a class="nav-button-icon" href="tel:+31648184188">
+                <i class="fa-solid fa-phone"></i> </a>
+            <a class="nav-button-icon" href="mailto:mna.ankrah@gmail.com">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </a>
+            <a class="nav-button-icon" href="https://www.linkedin.com/in/nii-ardey/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="nav-button-icon" href="https://github.com/dev-ardey">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+        </div>
 
     </footer>
 </body>

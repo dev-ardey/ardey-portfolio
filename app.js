@@ -1,7 +1,6 @@
 
 
 // hide and unhide projects 
-// observer
 // function that runs every time te visibility of observed elements changes
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -203,3 +202,76 @@ darkModeElement.addEventListener("click", () => {
   toggleDarkMode();
 });
 
+
+
+
+
+
+
+
+// navbar
+
+
+function toggleNavbar(event) {
+  const navbar = document.getElementById("navbar");
+  const navbarIcons = document.getElementById("navbar-icons");
+  const darkmode = document.getElementById("darkmode");
+
+  // Check if the click is on the navbar or navbar-icons
+  const isNavbarClick = event.target === navbar || navbar.contains(event.target);
+  const isNavbarIconsClick = event.target === navbarIcons || navbarIcons.contains(event.target);
+
+  if (isNavbarClick && !isNavbarIconsClick) {
+    // If clicked on the navbar itself (but not on navbar-icons), toggle the 'expanded' class
+    navbar.classList.toggle("expanded");
+    // Show/hide the navbar-icons when the navbar is expanded/collapsed
+    navbarIcons.style.display = navbar.classList.contains("expanded") ? "block" : "none";
+    // Toggle the 'hidden-2' class on #darkmode when the navbar is expanded/collapsed
+    darkmode.classList.toggle("hidden-2", navbar.classList.contains("expanded"));
+  }
+}
+
+// Collapse the navbar when clicking anywhere outside it, but keep it expanded when vw >= vh
+document.addEventListener("click", (event) => {
+  const navbar = document.getElementById("navbar");
+  const navbarIcons = document.getElementById("navbar-icons");
+  const darkmode = document.getElementById("darkmode");
+
+  // Check if the viewport width is greater than or equal to the viewport height
+  const isVwGreaterThanVh = window.innerWidth >= window.innerHeight;
+
+  if (!navbar.contains(event.target) && !isVwGreaterThanVh) {
+    // If clicked outside the navbar and vw < vh, collapse the navbar and remove 'expanded' class
+    navbar.classList.remove("expanded");
+    navbarIcons.style.display = "none";
+    darkmode.classList.remove("hidden-2");
+  }
+});
+
+// Function to handle viewport resize
+function handleViewportResize() {
+  const vw = window.innerWidth; // Viewport width in pixels
+  const vh = window.innerHeight; // Viewport height in pixels
+
+  const navbar = document.getElementById("navbar");
+  const navbarIcons = document.getElementById("navbar-icons");
+  const darkmode = document.getElementById("darkmode");
+
+  if (vw < vh) {
+    // If viewport width is less than viewport height, collapse the navbar
+    navbar.classList.remove("expanded");
+    navbarIcons.style.display = "none";
+    darkmode.classList.remove("hidden-2");
+  } else {
+    // If viewport width is greater than or equal to viewport height, keep the navbar expanded
+    navbar.classList.add("expanded");
+    navbarIcons.style.display = "block";
+    darkmode.classList.remove("hidden-2");
+  }
+}
+
+// Call the function initially to check the viewport size on page load
+handleViewportResize();
+
+// Attach the event listener to automatically detect changes in viewport size
+window.addEventListener("resize", handleViewportResize);
