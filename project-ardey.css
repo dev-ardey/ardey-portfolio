@@ -1755,7 +1755,7 @@ h1 {
   border-radius: 60px;
   padding-top: 0px;
   padding-bottom: 50px;
-  height: 137rem;
+  height: 114rem;
   width: 90%;
   margin-top: 50px;
   /* padding-left: 30px; */
@@ -1780,7 +1780,7 @@ h1 {
 
 #academic{
 
-  height: 850px;
+  width: 850px;
   /* width: 80%; */
   /* border-radius is 80px insteead of 60px so that is border-radius the img */
   border-radius: 80px;
@@ -1803,7 +1803,7 @@ h1 {
   border-radius: 60px;
   padding-top: 0px;
   padding-bottom: 50px;
-  height: 120rem;
+  height: 110rem;
   width: 90%;
   margin-top: 50px;
   /* padding-left: 30px; */
@@ -2207,13 +2207,13 @@ h1 {
   background-color: rgb(244, 247, 255);
 }
 
-#solution-oriented {
+#typescript {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(0, 236, 118); 
+  color: rgb(0, 114, 236); 
   background-color: rgb(244, 247, 255);
 }
 
@@ -2722,13 +2722,13 @@ h1 {
   background-color: var(--background2);
 }
 
-#deployment {
+#typescript-2 {
   width: 50px; 
   display: inline-block; 
   text-align: center;
   vertical-align: bottom; 
   line-height: 50px;
-  color: rgb(255, 0, 89); 
+  color: rgb(0, 114, 236); 
   background-color: var(--background2);
 }
 
